@@ -177,7 +177,7 @@
 
 /* sc-goal */
 .sc-goal {
-  overflow-y: hidden;
+  overflow: hidden;
 }
 .sc-goal .test-wrap {
   perspective: 2000px;
