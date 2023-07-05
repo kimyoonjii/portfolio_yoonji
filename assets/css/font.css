@@ -1,0 +1,27 @@
+
+
+@font-face {
+  font-family: 'ppmori';
+  src: url('../font/63e24dbff042c51a7291dc79_PPMori-Regular.woff2') format('woff2');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'ppmori';
+  src: url('../font/63e24dbf7a2260ad9f9e61ad_PPMori-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'pretendard';
+  src: url('../font/Pretendard-Bold.woff2') format('woff2');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'pretendard';
+  src: url('../font/Pretendard-Medium.woff2') format('woff2');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'pretendard';
+  src: url('../font/Pretendard-Regular.woff2') format('woff2');
+  font-weight: 300;
+}

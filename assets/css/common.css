@@ -1,0 +1,24 @@
+
+
+.common-inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+
+@media (max-width: 980px) {
+
+}
+
+
+
+
+@media (max-width: 768px) {
+.common-inner {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+  
+}

@@ -1,0 +1,280 @@
+
+.container {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+/* sc-intro */
+.sc-intro {
+  padding-top: 110px;
+}
+.sc-intro .title span {
+  display: block;
+}
+.sc-intro .title {
+  font-size: 70px;
+  font-weight: 400;
+  overflow: hidden;
+}
+.sc-intro .intro-slide {
+  height: 200px;
+}
+.sc-intro .text-box {
+  padding: 20px 0 50px;
+}
+.sc-intro .intro-slide .text-box .desc {
+  font-size: 70px;
+  font-weight: 600;
+}
+
+/* sc-projects */
+.sc-projects {}
+.sc-projects .project-wrap {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 50px;
+}
+.sc-projects .project-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.sc-projects .project-item .img-box {
+  position: relative;
+  width: 100%;
+  padding-bottom: calc((370/640)*100%);
+  transition: 0.3s;
+  overflow: hidden;
+  border-radius: 0%;
+}
+.sc-projects .project-item .img-box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s;
+}
+.sc-projects .project-item .img-box:hover {
+  border-radius: 0% 100px 0% 0%;
+} 
+.sc-projects .project-item .img-box:hover img {
+  transform: scale(1.1);
+}
+.sc-projects .project-item .text-box {
+  padding-top: 10px;
+}
+.sc-projects .project-item .text-box .title {
+  font-size: 40px;
+  font-weight: 600;
+}
+.sc-projects .project-item .text-box .desc {
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 10px;
+  line-height: 1.2;
+}
+
+.sc-projects .project-item .link-more-wrap {
+  display: flex;
+  gap: 20px;
+  padding-top: 10px;
+}
+.sc-projects .project-item .link-more-wrap .link-btn {
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 600;
+  border: 1px solid #2e3833;
+  border-radius: 15px;
+  padding: 5px 11px 2px 11px;
+  transition: 0.3s;
+}
+.sc-projects .project-item .link-more-wrap .link-btn:hover {
+  background: #2e3833;
+  color: #fff;
+}
+
+
+/* sc-about */
+.sc-about {
+  padding: 150px 0;
+}
+.sc-about .what-wrap {
+  display: flex;
+  flex-direction: column;
+}
+.sc-about .top-box {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.sc-about .top-box .text-box .title {
+  font-size: 140px;
+  font-weight: 700;
+  letter-spacing: -5px;
+  overflow: hidden;
+}
+.sc-about .top-box .text-box .title span {
+  display: block;
+}
+
+.sc-about .top-box .btn-box .img-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  background: #f4f85a;
+  border-radius: 50%;
+}
+.sc-about .top-box .btn-box .img-box:hover {
+  background: #2f2f32;
+}
+.sc-about .top-box .btn-box .btn .img-box img {
+  position: absolute;
+}
+.sc-about .top-box .btn-box .btn .hover-img {
+  opacity: 0;
+}
+.sc-about .top-box .btn-box .img-box:hover .hover-img{
+  transform: rotate(45deg);
+  opacity: 1;
+  transition: 0.3s;
+}
+.sc-about .center-box {
+  width: 100%;
+  max-width: 700px;
+  padding-top: 20px;
+}
+.sc-about .center-box p {
+  max-width: 700px;
+  font-size: 23px;
+  line-height: 1.3;
+  font-weight: 400;
+  padding-bottom: 100px;
+}
+.sc-about .bottom-box .list {
+  display: flex;
+  gap: 100px;
+}
+.sc-about .bottom-box .list .item {
+  display: flex;
+  gap: 20px;
+  line-height: 1.2;
+}
+.sc-about .bottom-box .list .item .num {
+  font-size: 20px;
+  font-weight: 600;
+}
+.sc-about .bottom-box .list .item .text {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+/* sc-goal */
+.sc-goal {
+  overflow-y: hidden;
+}
+.sc-goal .test-wrap {
+  perspective: 2000px;
+}
+.sc-goal .sc-wrap {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  padding: 50px;
+  will-change: transform;
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(70deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+  transform-origin: 50% 0;
+  background: #fbfda4;
+}
+
+.sc-goal .sc-wrap .title-box {
+  max-width: 560px;
+  flex: 1;
+}
+.sc-goal .sc-wrap .title-box h2 {
+  font-size: 91px;
+  font-weight: 700;
+  word-break: keep-all;
+  line-height: 1.1;
+}
+.sc-goal .sc-wrap .text-box {
+  flex: 1;
+  max-width: 536px;
+}
+.sc-goal .sc-wrap .text-box h2 {
+  font-size: 120px;
+  font-weight: 700;
+  letter-spacing: -4px;
+}
+.sc-goal .sc-wrap .text-box p {
+  padding: 20px 0 40px;
+  line-height: 1.4;
+}
+.sc-goal .text-box .btn {
+  display: flex;
+  align-items: center;
+  width: 230px;
+  height: 50px;
+  padding: 10px;
+  background: #2e3833;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 0% 100px 100px 0%;
+}
+.sc-goal .text-box img {
+  padding-left: 10px;
+}
+
+
+
+@media (max-width: 980px) {
+
+    /* sc-about */
+    .sc-about .top-box .text-box .title {font-size: 60px; letter-spacing: 0;}
+    .sc-about .center-box p {font-weight: 300;}
+    .sc-about .bottom-box .list .item .text {font-size: 30px;}
+    .sc-about .bottom-box .list {display: grid;  gap: 20px; grid-template-columns: repeat(2,1fr); flex-wrap: wrap;}
+
+    /* sc-goal */
+    .sc-goal .sc-wrap {display: block;}
+    .sc-goal .sc-wrap .img-box {max-width: 100%;}
+    .sc-goal .sc-wrap .text-box {max-width: 100%;}
+
+}
+
+
+
+
+@media (max-width: 768px) {
+  /* sc-intro */
+  .sc-intro .title {font-size: 30px;}
+  .sc-intro .intro-slide .text-box .desc {font-size: 40px;}
+
+  /* sc-projects  */
+  .sc-projects .project-wrap {display: block;}
+  .sc-projects .project-wrap .project-list {margin-bottom: 30px;}
+  .sc-projects .project-item .text-box .title {font-size: 30px;}
+  .sc-projects .project-item .img-box:hover {border-radius: 0% 60px 0% 0%;} 
+
+  /* sc-about */
+  .sc-about {padding: 50px 0;}
+  .sc-about .top-box .btn-box .img-box  {width: 50px; height: 50px;}
+  .sc-about .top-box .btn-box .btn .img-box img {width: 16px; height: 16px;}
+  .sc-about .center-box p {font-size: 17px; padding-bottom: 50px;}
+  .sc-about .bottom-box .list {grid-template-columns: repeat(1,1fr);}
+  
+  /* sc-goal */
+  .sc-goal .sc-wrap {padding: 30px;}
+  .sc-goal .sc-wrap .title-box h2 {font-size: 40px; letter-spacing: 0;}
+  .sc-goal .sc-wrap .text-box h2 {font-size: 35px; letter-spacing: 0;}
+  .sc-goal .sc-wrap .text-box p {font-size: 17px;}
+
+}
