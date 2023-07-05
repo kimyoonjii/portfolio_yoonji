@@ -176,9 +176,9 @@
 }
 
 /* sc-goal */
-/* .sc-goal {
+.sc-goal {
   overflow: hidden;
-} */
+}
 .sc-goal .test-wrap {
   perspective: 2000px;
 }
